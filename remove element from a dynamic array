@@ -1,0 +1,28 @@
+M1)class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+ vector<int> :: iterator it;
+        int a=0;
+        it=remove(nums.begin(),nums.end(),val);
+            for(vector<int>::iterator p=nums.begin();p!=it;++p)
+            {
+                cout<<*p;
+                a++;
+            }
+        return a;
+    }
+    
+};
+
+M2)class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+  int j=0;
+        for(int i=0;i<nums.size();i++)
+        {
+            if(nums[i]!=val)
+            nums[j++]=nums[i];
+        }
+    return j;
+    }
+};
