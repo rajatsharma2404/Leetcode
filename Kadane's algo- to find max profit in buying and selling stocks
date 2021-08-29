@@ -19,4 +19,4 @@ public:
                 max=prices[i]-min;
         }
         return max;}
-};
+}
