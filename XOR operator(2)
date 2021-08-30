@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int mis(int arr[],int n)
+{ int missing =0;
+for(int i=0;i<n;i++)
+{missing = missing^arr[i]^(i+1);
+}
+return missing;
+}
+
+int main()
+{int arr[]={0,1,3};
+int missing_number = mis(arr,3);
+cout<<missing_number;
+}
