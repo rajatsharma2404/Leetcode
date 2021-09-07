@@ -66,4 +66,4 @@ int main()
 	printf("Maximum contiguous sum is %d\n", max_sum);
 	getchar();
 	return 0;
-}
+} 
